@@ -7,8 +7,8 @@
   <title>Document</title>
 </head>
 <body>
-  {{range .}}
-  <h1>{{.}}</h1>
+  {{range $key, $val := .}}
+  <h1>{{$key}} - {{$val}}</h1>
   {{end}}
 </body>
 </html>
